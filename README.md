@@ -1,29 +1,23 @@
 # TickeTon
+Ligoninėse, bankuose, pašte, pasų išdavimo skyriuose ir pan. galima matyti ekranus su skaičiukais.
+Ateini, gauni lapuką pas pasirinktą specialistą/darbuotoją/langelį ir lauki savo eilės.
 
-Foobar is a Python library for dealing with word pluralization.
+Minimalus užduoties įgyvendinimas ( `Level 1` )
+===============================
 
-## Installation
+**Turi būti 3 puslapiai (HTML failai):**
+- [ ] Administravimo puslapis, skirtas įvesti naują klientą į eilę
+- [ ] Švieslentės puslapis, skirtas rodyti greitai sulauksiančius klientus (aukščiausiai pas specialistą – reiškia klientui eiti)
+- [ ] Specialisto puslapis, kur jis gali pažymėti, kad aptarnavo klientą
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+**Techniniai kriterijai:**
 
-```bash
-pip install foobar
-```
+- [ ] Yra `JSON` failas su pavyzdiniu klientu sąrašu
+- [ ] Yra mygtukas išsaugoti pavyzdinius duomenis į `localStorage` (ar `IndexDB`) (_administravimo puslapis_)
+- [ ] Pavyzdiniai duomenys įkraunami dinamiškai neperkraunant naršyklės (`AJAX` užklausa)
+- [ ] Duomenys atvaizduojami surikiuoti pagal specialistą ir tada pagal kliento numerį (_švieslentės puslapis_)
+- [ ] Yra funkcija įrašymui į `localStorage` (_administravimo puslapis_)
+- [ ] Yra funkcija kliento ištrynimui iš objekto (mygtukas `Aptarnauta`) (_specialisto puslapis_)
+- [ ] Duomenų filtravimas: pasirinkimas, kokio specialisto klientus aptarnauti (_specialisto puslapis_)
+- [ ] Gražesnis dizainas panaudojant `CSS` (_švieslentės puslapis_)
 
-## Usage
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
