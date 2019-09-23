@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Dr. Bowen Chan",
+    "specialty" : "Neurologist",
+    "tickets": [1, 2, 3, 4, 5, 6, 7],
+    "foods": {
+      "likes": ["celery", "strawberries", "snow"],
+      "dislikes": ["carrots"]
+    }
+  },
+  {
+    "name": "Dr. Michael Lewis",
+    "specialty" : "Surgeon",
+    "tickets": [1, 2, 3, 4, 5, 6, 7],
+    "foods": {
+      "likes": ["dog food"],
+      "dislikes": ["cat food"]
+    }
+  },
+  {
+    "name": "Dr. Sheeja Mathai",
+    "specialty" : "Psychiatrist",
+    "tickets": [1, 2, 3, 4, 5, 6, 7],
+    "foods": {
+      "likes": ["canned food"],
+      "dislikes": ["dry food", "wet food"]
+    }
+  }
+]
