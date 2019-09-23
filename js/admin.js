@@ -18,7 +18,8 @@ function jsonToLocal() {
       localStorage.setItem('doctorsData', ourRequest.responseText);
       //const ourData = JSON.parse(ourRequest.responseText);
       //console.log(ourData, ourRequest.responseText);
-
+      doctorsData = JSON.parse(ourRequest.responseText);
+      renderHTMLDoc(doctorsData);
       seuccess();
  
     } else {
@@ -43,7 +44,7 @@ function seuccess() {
   pElement.className = "success";
   pElement.appendChild(pTextas)
   btnJSON.after(pElement);
-
+ 
 
 //alert(doctorsData);
 }
@@ -56,8 +57,8 @@ function seuccess() {
 
 
 const contentMas = document.getElementById("contentMas"),
-  btnServ = document.getElementById("btnAdd"),
-  doctorsData = JSON.parse(localStorage.getItem('doctorsData'));
+  btnServ = document.getElementById("btnAdd");
+ let doctorsData = JSON.parse(localStorage.getItem('doctorsData'));
 
 btnServ.addEventListener("click", addCust, false);
 
