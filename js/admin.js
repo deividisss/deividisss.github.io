@@ -66,20 +66,23 @@ if (doctorsData !== null) renderHTMLDoc(doctorsData);
 
 
 function renderHTMLDoc(data) {
-console.log(data);
-  let htmlString2 = ``;
-  htmlString2 += `<select id="mySelect" onchange="getSelected()">`;
 
-  for (i = 0; i < data.length; i++) {
-    htmlString2 += `<option value="${data[i].name}">${data[i].name}</option>`;
+    let htmlString2 = ``;
+    const docselection = document.getElementById("mySelect");
+    if (docselection !== null) docselection.remove();
+    htmlString2 += `<select id="mySelect" onchange="getSelected()">`;
+  
+    for (i = 0; i < data.length; i++) {
+      htmlString2 += `<option value="${data[i].name}">${data[i].name}</option>`;
+    }
+  
+    htmlString2 += `</select>`;
+  
+    contentMas.insertAdjacentHTML('afterbegin', htmlString2);
+    getSelected();
+  
   }
-
-  htmlString2 += `</select>`;
-  contentMas.insertAdjacentHTML('afterbegin', htmlString2);
-  getSelected();
-
-}
-
+  
 
 function getSelected() {
 
