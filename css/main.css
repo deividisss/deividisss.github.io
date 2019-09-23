@@ -3,6 +3,7 @@ html, body {
     margin: 0;
   }
   
+ 
   .hide-me {
     visibility: hidden;
     opacity: 0;
@@ -13,12 +14,11 @@ html, body {
     margin-top: 0;
     font-size: 2.4em;
     font-weight: normal;
-    display: inline-block;
   }
   
   body {
     font-family: Helvetica, sans-serif;
-    padding: 10px 2.5%;
+    padding: 10px 5%;
   }
   
   button {
@@ -32,7 +32,7 @@ html, body {
     outline: none;
     box-shadow: 2px 2px 0 #034154;
     margin-bottom: 10px;
-    margin-left: 18px;
+
     transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
     position: relative;
     top: -10px;
@@ -51,7 +51,7 @@ html, body {
   }
   
   p {
-    padding: 4px 0 2px 8px;
+ 
     line-height: 1.7;
     /* border-bottom: 1px dotted #DDD; */
     list-style: none;
