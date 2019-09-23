@@ -1,4 +1,5 @@
-
+const  contentMas = document.getElementById("contentMas");
+let doctorsData = JSON.parse( localStorage.getItem( 'doctorsData' ));
 
 renderHTMLDoc(doctorsData);
 
