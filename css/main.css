@@ -79,6 +79,7 @@ p {
 }
 
 .indexH1 {
+    
   font-size: 30px;
   color: #fff;
   text-transform: uppercase;
@@ -92,17 +93,25 @@ p {
 }
 
 
-.listStyle li {
+.listStyle li{
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #indexNav a {
+
   color: white;
 
 }
 
 #indexNav {
+
   color: white;
 
 }
+
+.listStyle li:first-child {
+
+    background-color: rgba(255,255,255,0.3);
+    
+ }
