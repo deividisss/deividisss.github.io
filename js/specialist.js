@@ -25,7 +25,7 @@ function renderHTMLDoc(data) {
 function getSelected() {
 
   let selected = document.getElementById("mySelect").value;
-  document.getElementById("demo").innerHTML = "Pasirinktas gyditojas: " + selected;
+  document.getElementById("specialist").innerHTML = "Pasirinktas gyditojas: " + selected;
   displayArray(selected);
 
 }

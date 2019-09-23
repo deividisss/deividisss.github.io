@@ -19,6 +19,7 @@ html, body {
   body {
     font-family: Helvetica, sans-serif;
     padding: 10px 5%;
+    
   }
   
   button {
@@ -68,4 +69,20 @@ html, body {
        font-weight: bold;
        font-size: 1.5rem;
   
+   }
+
+   #index{
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+   }
+
+   .indexH1 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    margin-bottom: 15px;
+    margin-top:  20px;
    }
