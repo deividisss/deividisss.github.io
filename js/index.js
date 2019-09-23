@@ -14,7 +14,7 @@ function renderHTMLDoc(data) {
     for (ii = 0; ii < data[i].tickets.length; ii++) {
       htmlString += "<li>" + data[i].tickets[ii] + "</li>";
     }
-    htmlString += "</ul><hr></div>";
+    htmlString += "</ul></div>";
 
   }
 

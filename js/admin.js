@@ -18,8 +18,9 @@ function jsonToLocal() {
       localStorage.setItem('doctorsData', ourRequest.responseText);
       //const ourData = JSON.parse(ourRequest.responseText);
       //console.log(ourData, ourRequest.responseText);
+
       seuccess();
-      //renderHTMLDoc(ourData);
+ 
     } else {
       console.log(" We connected to the server, but it returned an error");
     }
@@ -42,12 +43,18 @@ function seuccess() {
   pElement.className = "success";
   pElement.appendChild(pTextas)
   btnJSON.after(pElement);
+
+
+//alert(doctorsData);
 }
 //END Add JSON data to localStorage code section
 
 
 
 //START Add customer code section
+
+
+
 const contentMas = document.getElementById("contentMas"),
   btnServ = document.getElementById("btnAdd"),
   doctorsData = JSON.parse(localStorage.getItem('doctorsData'));
@@ -56,8 +63,9 @@ btnServ.addEventListener("click", addCust, false);
 
 if (doctorsData !== null) renderHTMLDoc(doctorsData);
 
-function renderHTMLDoc(data) {
 
+function renderHTMLDoc(data) {
+console.log(data);
   let htmlString2 = ``;
   htmlString2 += `<select id="mySelect" onchange="getSelected()">`;
 
